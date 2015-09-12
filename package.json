@@ -1,6 +1,6 @@
 {
   "name": "grunt-shdrsconcat",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "Unifies all shaders in a single object. The content of each shader is concatenated into a single string.",
   "repository": {
     "type": "git",
