@@ -1,0 +1,22 @@
+{
+  "name": "grunt-shdrsconcat",
+  "version": "0.1.0",
+  "description": "Unifies all shaders in a single object. The content of each shader is concatenated into a single string.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresz1/grunt-shdrsconcat.git"
+  },
+  "keywords": [
+    "shaders",
+    "glsl",
+    "webgl",
+    "concat",
+    "unify"
+  ],
+  "author": "Andres Alvarez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andresz1/grunt-shdrsconcat/issues"
+  },
+  "homepage": "https://github.com/andresz1/grunt-shdrsconcat#readme"
+}
