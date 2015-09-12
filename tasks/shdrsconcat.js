@@ -21,16 +21,13 @@ module.exports = function(grunt) {
 
       src += f.src.filter(function(filePath) {
         if (!grunt.file.exists(filePath)) {
-          grunt.log.warn('Source file "' + filepath + '" not found.');
+          grunt.log.warn('Source file ' + filePath + ' not found.');
           return false;
         }
 
-        return true;
-      }).map(function(filePath, i) {
+        return !grunt.file.isDir(filePath);
+      }).map(function(filePath) {
         var base, tokens, name, ext, src;
-
-        if (grunt.file.isDir(filePath))
-          return;
 
         base = path.basename(filePath);
         tokens = base.split('.');
@@ -47,7 +44,7 @@ module.exports = function(grunt) {
       }).join('\n');
 
       grunt.file.write(f.dest, src);
-      grunt.log.writeln('File "' + f.dest + ' created.');
+      grunt.log.writeln('File ' + f.dest + ' created.');
     });
   });
 };
