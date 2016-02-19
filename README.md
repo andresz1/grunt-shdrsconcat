@@ -56,8 +56,8 @@ grunt.initConfig({
     },
     files: {
       'ShaderLibrary.js': [
-        'src/*.vert',
-        'src/*.frag'
+        'src/shaders/*.vert',
+        'src/shaders/*.frag'
       ]
     }
   }
